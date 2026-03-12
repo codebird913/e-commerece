@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from '../utils/axiosInstance';
 import React, { useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 const Register = () => {
@@ -15,7 +15,7 @@ const Register = () => {
         console.log("Number ======>", number)
         console.log("Password ======>", password)
         try{
-                const {data} = await axios.post("http://localhost:3000/register",
+                const {data} = await axios.post("/register",
                     {
                         fullName, email, password, number
                     }

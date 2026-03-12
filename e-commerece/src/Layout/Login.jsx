@@ -1,4 +1,4 @@
-import axios from 'axios'
+import axios from '../utils/axiosInstance';
 import React from 'react'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -12,7 +12,7 @@ const Login = () => {
         e.preventDefault();
 
         try {
-            const { data } = await axios.post("http://localhost:3000/login",
+            const { data } = await axios.post("/login",
                 {
                     email, password
                 }

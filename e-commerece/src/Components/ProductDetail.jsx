@@ -1,52 +1,4 @@
-// import React from 'react'
-// import axios from '../utils/axiosInstance'
-// import { useParams } from 'react-router-dom'
-// import { useState, useEffect } from 'react'
 
-// const ProductDetail = () => {
-
-//     const [productDetails, setproductDetails] = useState()
-
-//     const { id } = useParams()
-//     console.log(id)
-
-//     const fetchProductDetails = async () => {
-//         try {
-
-//             const { data } = await axios.get(`/product/product-detail/${id}`)
-//             console.log(data)
-//             setproductDetails(data.product)
-//         }
-//         catch (err) {
-//             console.log(err)
-
-//         }
-
-//         useEffect(() => {
-//             fetchProductDetails()
-//         }, [])
-//     }
-//         return (
-//             <>
-//                 <div className="container">
-//                     <div className="row">
-//                         <div className="col-6">
-//                             <img src={`http://localhost:3000/upload/${productDetails?.productImage}`} />
-//                         </div>
-//                         <div className="col-6">
-//                             <div>Name: {productDetails?.productName} </div>
-//                             <div>Description: {productDetails?.productDescription} </div>
-//                             <div>Price: {productDetails?.productPrice} </div>
-//                             <button className='btn btn-success'>Add to cart</button>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </>
-//         )
-// }
-
-
-// export default ProductDetail
 
 
 import React from 'react'
@@ -108,7 +60,7 @@ const ProductDetail = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-6">
-                        <img height={500} width={500} src={`http://localhost:3000/upload/${productDetails?.productImage}`} alt={productDetails?.productName} />
+                        <img height={500} width={500} src={`/upload/${productDetails?.productImage}`} alt={productDetails?.productName} />
                     </div>
                     <div className="col-6">
                         <div>Name: {productDetails?.productName} </div>

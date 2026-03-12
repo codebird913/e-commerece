@@ -108,7 +108,7 @@ const Cart = () => {
                                     <img
                                         height={200}
                                         width={200}
-                                        src={`http://localhost:3000/upload/${item.productImage}`}
+                                        src={`/upload/${item.productImage}`}
                                         alt={item.productName}
                                     />
                                     <div>

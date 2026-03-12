@@ -61,7 +61,7 @@ function Product() {
                                     handleProductDetails={() => handleProductDetails(item._id)}
                                     handleAddToCart={() => handleAddToCart(item)}
                                     name={item.productName}
-                                    img={`http://localhost:3000/upload/${item.productImage}`}
+                                    img={`/upload/${item.productImage}`}
                                     description={item.productDescription}
                                     price={item.productPrice} />
                             </div>

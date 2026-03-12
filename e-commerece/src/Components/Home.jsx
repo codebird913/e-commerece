@@ -1,4 +1,4 @@
-import axios from 'axios'
+import axios from '../utils/axiosInstance'
 import React from 'react'
 import { useFetcher } from 'react-router-dom';
 import { useEffect } from 'react';
@@ -8,7 +8,7 @@ const Home = () => {
     const [hello, setHello] = useState();
     const fetchHello = async () => {
         try {
-            const { data } = await axios.get("http://localhost:3000/hello");
+            const { data } = await axios.get("/");
             console.log(data)
 
             setHello(data)
