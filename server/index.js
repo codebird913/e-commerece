@@ -13,9 +13,10 @@ dotenv.config()
 
 require("node:dns/promises").setServers(["8.8.8.8", "1.1.1.1"]);
 
-app.use(cors({  // Enable CORS for all routes
-    origin: 'https://e-commerece-paes.vercel.app/',  // Replace with your frontend's origin (e.g., dev server port)
-    credentials: true  // If using cookies or auth headers
+app.use(cors({
+  origin: "https://e-commerece-paes.vercel.app/",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
 }));
 app.use(express.json());
 app.use('/upload',express.static('upload'))
