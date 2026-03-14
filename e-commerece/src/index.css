@@ -2,8 +2,8 @@
     cursor: pointer;
 }
 
-table,tr,th,td{
+.table,tr,th,td{
     border: 1px solid;
-    boarder collapse: collapse;
+    border-collapse: collapse;
     
 }
