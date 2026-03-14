@@ -14,7 +14,7 @@ dotenv.config()
 require("node:dns/promises").setServers(["8.8.8.8", "1.1.1.1"]);
 
 app.use(cors({  // Enable CORS for all routes
-    origin: 'http://localhost:5173',  // Replace with your frontend's origin (e.g., dev server port)
+    origin: 'https://e-commerece-paes.vercel.app/',  // Replace with your frontend's origin (e.g., dev server port)
     credentials: true  // If using cookies or auth headers
 }));
 app.use(express.json());
