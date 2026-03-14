@@ -16,7 +16,7 @@ import Cart from './Components/Cart'
 const App = () => {
   return (
 
-
+    console.log(import.meta.env.VITE_REACT_APP_BACKENDBASE_URL),
     <BrowserRouter>
       <Navbar />
       <Routes>
