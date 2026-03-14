@@ -14,7 +14,7 @@ dotenv.config()
 require("node:dns/promises").setServers(["8.8.8.8", "1.1.1.1"]);
 
 app.use(cors({
-  origin: "https://e-commerece-paes.vercel.app/",
+  origin: "https://e-commerece-paes.vercel.app",
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
